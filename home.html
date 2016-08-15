@@ -13,11 +13,11 @@
     <title>Find source</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <link href="public/css/reset.css" rel="stylesheet">
+    <link href="public/css/home.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body ng-app="app">
 
     <!-- Navigation -->
     <header>
@@ -48,13 +48,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#/about">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#/services">Services</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#/contacts">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,13 +63,15 @@
         <!-- /.container -->
     	</nav>
     </header>
+    <div class="content">
+        <div ng-view></div>
+    </div>
 
-
-    <!-- Put your page content here! -->
-
-    <!-- jQuery -->
+    <script src="vendor/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="vendor/jquery.js"></script>
-
+    <script type="text/javascript" src="public/js/script.js"></script>
+    <script type="text/javascript" src="public/js/app.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap.min.js"></script>
 

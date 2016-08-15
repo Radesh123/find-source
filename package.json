@@ -1,0 +1,24 @@
+{
+  "name": "find-source",
+  "version": "1.0.0",
+  "description": "The App is to find a person's details when entered the area code",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Radesh123/find-source.git"
+  },
+  "author": "Nagender Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Radesh123/find-source/issues"
+  },
+  "homepage": "https://github.com/Radesh123/find-source",
+  "devDependencies": {
+    "angular-ui-router": "^0.3.1",
+    "express": "^4.14.0"
+  }
+}
